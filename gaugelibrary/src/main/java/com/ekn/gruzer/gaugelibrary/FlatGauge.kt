@@ -112,10 +112,10 @@ class FlatGauge: View {
             val padTop = context.obtainStyledAttributes(
                     attrs, R.styleable.FlatGauge, 0, 0).apply {
                 try {
-                    fgPaddingLeft = dpToPx(getFloat(R.styleable.FlatGauge_flatg_paddingLeft, 10f))
-                    fgPaddingTop = dpToPx(getFloat(R.styleable.FlatGauge_flatg_paddingTop, 20f))
-                    fgPaddingRight = dpToPx(getFloat(R.styleable.FlatGauge_flatg_paddingRight, 10f))
-                    fgPaddingBottom = dpToPx(getFloat(R.styleable.FlatGauge_flatg_paddingBottom, 20f))
+                    fgPaddingLeft = getDimensionPixelSize(R.styleable.FlatGauge_flatg_paddingLeft, 0).toFloat()
+                    fgPaddingTop = getDimensionPixelSize(R.styleable.FlatGauge_flatg_paddingTop, 0).toFloat()
+                    fgPaddingRight = getDimensionPixelSize(R.styleable.FlatGauge_flatg_paddingRight, 0).toFloat()
+                    fgPaddingBottom = getDimensionPixelSize(R.styleable.FlatGauge_flatg_paddingBottom, 0).toFloat()
 
                 } finally {
                     recycle()

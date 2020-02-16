@@ -18,8 +18,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:paddingBottom="24dp"
-        android:paddingTop="24dp"
+        app:flatg_paddingBottom="48dp"
+        app:flatg_paddingTop="24dp"
+        app:flatg_paddingLeft="16dp"
+        app:flatg_paddingRight="8dp"
         />
 
     <EditText
