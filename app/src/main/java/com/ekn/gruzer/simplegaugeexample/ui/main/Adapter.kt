@@ -20,11 +20,7 @@ package com.ekn.gruzer.simplegaugeexample.ui.main
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
-import com.ekn.gruzer.simplegaugeexample.ui.gauge.ArcGaugeFragment
-import com.ekn.gruzer.simplegaugeexample.ui.gauge.FullGauge
-
-import com.ekn.gruzer.simplegaugeexample.ui.gauge.HalfGaugeFragment
-import com.ekn.gruzer.simplegaugeexample.ui.gauge.MultiGaugeFragment
+import com.ekn.gruzer.simplegaugeexample.ui.gauge.*
 
 class Adapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(fragmentManager) {
 
@@ -35,12 +31,13 @@ class Adapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(frag
             1 -> return HalfGaugeFragment.newInstance()
             2 -> return FullGauge.newInstance()
             3 -> return ArcGaugeFragment.newInstance()
+            4 -> return FlatGaugeFragment.newInstance()
         }
         return HalfGaugeFragment.newInstance()
     }
 
     override fun getCount(): Int {
-        return 4
+        return 5
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
@@ -49,6 +46,7 @@ class Adapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(frag
             1 -> return "HalfGauge"
             2 -> return "FullGauge"
             3 -> return "ArcGauge"
+            4 -> return "FlatGauge"
         }
         return "Title"
     }

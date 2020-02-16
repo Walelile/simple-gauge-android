@@ -24,7 +24,7 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class AbstractGauge extends View {
+public abstract class AbstractGauge extends View {
 
 
     private List<Range> ranges = new ArrayList<>();
@@ -69,9 +69,14 @@ abstract class AbstractGauge extends View {
 
     protected RectF getRectF() {
         if (rectF == null)
-            rectF = new RectF(rectLeft + padding, rectTop + padding, rectRight - padding, rectBottom - padding);
+            rectF = new RectF(
+                    rectLeft + padding,
+                    rectTop + padding,
+                    rectRight - padding,
+                    rectBottom - padding);
         return rectF;
     }
+
 
     protected Float getScaleRatio() {
         int measuredHeight = getMeasuredHeight();
@@ -126,6 +131,7 @@ abstract class AbstractGauge extends View {
             gaugeBackGround.setColor(Color.parseColor("#EAEAEA"));
             gaugeBackGround.setAntiAlias(true);
             gaugeBackGround.setStyle(Paint.Style.STROKE);
+            //gaugeBackGround.setStyle(Paint.Style.FILL);
             // gaugeBackGround.setShadowLayer(15.0f,0f,5.0f,0X50000000);
             // setLayerType(LAYER_TYPE_SOFTWARE, gaugeBackGround);
         }
