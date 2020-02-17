@@ -11,6 +11,21 @@
         <attr name="flatg_maxValueText" format="string" />
         <attr name="flatg_centerValueText" format="string" />
         <attr name="flatg_centerMsg" format="string" />
+        <attr name="flatg_needleLineColor" format="color" />
+        <attr name="flatg_needleOvalColor" format="color" />
+        <attr name="flatg_needleBottomOffset" format="dimension" />
+        <attr name="flatg_valueTextSize" format="dimension" />
+        <attr name="flatg_minValueTextSize" format="dimension" />
+        <attr name="flatg_maxValueTextSize" format="dimension" />
+        <attr name="flatg_valueTextColor" format="color" />
+        <attr name="flatg_minValueTextColor" format="color" />
+        <attr name="flatg_maxValueTextColor" format="color" />
+        <attr name="flatg_msgTextColor" format="color" />
+        <attr name="flatg_msgTextSize" format="dimension" />
+        <attr name="flatg_msgTextRegionHeight" format="dimension" />
+        <attr name="flatg_valueTextRegionHeight" format="dimension" />
+        <attr name="flatg_valueMsg" format="string" />
+
 
     </declare-styleable>
 </resources>

@@ -20,6 +20,7 @@ package com.ekn.gruzer.simplegaugeexample.ui.gauge
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,17 +45,17 @@ class FlatGaugeFragment : Fragment() {
 
 
         val range = Range()
-        range.color = Color.parseColor("#E3E500")
+        range.color = ContextCompat.getColor(activity!!, R.color.colorBlue)
         range.from =0.0
-        range.to = 100.0
+        range.to = 33.3
 
         val range2 = Range()
-        range2.color = Color.parseColor("#ce0000")
+        range2.color = ContextCompat.getColor(activity!!, R.color.colorRed)
         range2.from = 33.3
         range2.to = 66.6
 
         val range3 = Range()
-        range3.color = Color.parseColor("#00b20b")
+        range3.color = ContextCompat.getColor(activity!!, R.color.colorGreen)
         range3.from = 66.6
         range3.to = 100.0
 
@@ -66,8 +67,8 @@ class FlatGaugeFragment : Fragment() {
         //add color ranges to gauge
         //add color ranges to gauge
         flatGauge.addRange(range)
-        //flatGauge.addRange(range2)
-        //flatGauge.addRange(range3)
+        flatGauge.addRange(range2)
+        flatGauge.addRange(range3)
         //flatGauge.addRange(range4)
 
         //set min max and current value

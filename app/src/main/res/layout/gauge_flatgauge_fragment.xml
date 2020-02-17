@@ -22,6 +22,15 @@
         app:flatg_paddingTop="24dp"
         app:flatg_paddingLeft="16dp"
         app:flatg_paddingRight="8dp"
+        app:flatg_valueTextSize="20sp"
+        app:flatg_minValueTextSize="40sp"
+        app:flatg_maxValueTextSize="30sp"
+        app:flatg_minValueTextColor="@color/colorRed"
+        app:flatg_maxValueTextColor="@color/colorBlue"
+        app:flatg_valueTextColor="@color/colorGreen"
+        app:flatg_msgTextSize="50sp"
+        app:flatg_msgTextColor="@color/colorPrimaryDark"
+        app:flatg_valueMsg="zzzdfdf"
         />
 
     <EditText
